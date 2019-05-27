@@ -1,0 +1,194 @@
+body{
+  background-color: #02010a;
+  font-family: "Dancing Script";
+}
+
+img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+.contenido{
+  max-width: 900px;
+  margin: auto;
+}
+
+header{
+  background-color: #5b7989;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  height: 80px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+header h1{
+  float: left;
+  display: block;
+  text-shadow: 2px 2px 2px #02010A;
+}
+
+header nav {
+  height: 100%;
+  float: right;
+  display: block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+nav a{
+  color: white;
+  font-size: 1.1em;
+}
+
+nav a[href*="index"]{
+  text-decoration: none;
+}
+
+.imagenCentral{
+  text-align: center;
+  background-color: #82c3a6;
+}
+
+.imagenCentral img{
+  width: 100%;
+  max-width: 768;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imangenSecundaria{
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  text-align: center;
+  background-color: #d5c75f;
+  text-align: center;
+}
+
+.imangenSecundaria a{
+  color: black;
+  font-size: 1.3em;
+}
+
+.imangenSecundaria div{
+  width: 50%;
+}
+
+.imangenSecundaria img{
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 90%;
+  max-width: 640;
+
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.imagenIzq img:hover{
+  border: 2px solid black;
+  transform: rotate(10deg);
+  box-shadow: 5px 5px 5px #82c3a6;
+}
+
+.imagenDer img:hover{
+  transform: translate(20px, -5px);
+  border: 2px solid black;
+  box-shadow: -5px 5px 5px #82c3a6;
+}
+
+footer{
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+  width: 100%;
+}
+
+.contenidoFooter{
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+}
+
+footer img{
+  width: 40px;
+  padding: 5px;
+}
+
+footer div{
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 25%;
+}
+
+
+@media (max-width: 900px) {
+  .contenido{
+    width: 100%;
+  }
+
+  header{
+    text-align: center;
+  }
+
+  header h1{
+    float: none;
+    display: block;
+  }
+
+  header nav {
+    height: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .imagenCentral img{
+    width: 95%;
+    max-width: 768;
+  }
+
+  .imangenSecundaria{
+    clear: both;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .imangenSecundaria div{
+    width: 100%;
+  }
+
+  .imangenSecundaria img{
+    width: 95%;
+  }
+
+  .contenidoFooter{
+    display: flex;
+    flex-flow: column;
+  }
+
+  .contenidoFooter div{
+    width: 100%;
+  }
+
+}
+
+header{
+  animation: iniciaPagina 1s;
+}
+
+@-webkit-keyframes iniciaPagina {
+  0%{
+    margin-top: 150%;
+  }
+
+  60%{
+    margin-top: -5%;
+  }
+
+  100%{
+    margin-top: 0%;
+  }
+}
